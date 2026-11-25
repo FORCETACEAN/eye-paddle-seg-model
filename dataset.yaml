@@ -1,0 +1,11 @@
+# EyePaddleSeg 数据集配置（YOLO-seg，单类 eye_paddle）
+#
+# 训练数据集为 192×192 眼部 ROI 图，属专有数据，不在本仓库分发。
+# 使用本脚本复现训练时，请将 path 指向你自己的数据集根目录
+# （目录结构：images/{train,val} 与 labels/{train,val}，
+#   labels 为 YOLO-seg 多边形 .txt，负样本为同名空文件）。
+path: <你的数据集根目录绝对路径>
+train: images/train
+val: images/val
+names:
+  0: eye_paddle
